@@ -13,23 +13,23 @@ class Program
 
         if (x >= 90)
         {
-            letter = "A";
+            letter = 'A';
         }
         else if (x >= 80)
         {
-            letter = "B";
+            letter = 'B';
         }
         else if (x >= 70)
         {
-            letter = "C";
+            letter = 'C';
         }
         else if (x >= 60)
         {
-            letter = "D";
+            letter = 'D';
         }
         else
         {
-            letter = "F";
+            letter = 'F';
         }
 
         Console.WriteLine($"Your grade is: {letter}");
