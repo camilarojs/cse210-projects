@@ -1,16 +1,26 @@
+using System.Buffers.Text;
+
 class Police : Person
 {
     private string _weapons;
 
     public Police(string weapons, string firstName,
         string lastName, int age, int weight)
-        : base (firstName, lastName, age, weight)
+        : base(firstName, lastName, age, weight)
     {
         _weapons = weapons;
     }
 
-    public string GetPolicManInformation()
+    public override string GetPersonInformation()
     {
-        return $"Weapons: {_weapons}, {GetPersonInformation()}";
+        return $"Weapons: {_weapons}, {base.GetPersonInformation()}";
     }
+
+    public override double GetSalary()
+    {
+        return 123342.23;
+    }
+
+
+
 }
