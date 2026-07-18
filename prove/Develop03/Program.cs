@@ -1,5 +1,11 @@
 using System;
 
+// Creativity Description:
+// For the creativity part, I made the random hiding system a bit smarter. 
+// Instead of picking words completely at random and accidentally selecting words that are already blanked out, 
+// it filters them first so it only hides words you can actually still see. 
+// I also added .ToLower() to the input so if a user types 'QUIT' or 'Quit' in all caps, it still registers it perfectly.
+
 class Program
 {
     static void Main(string[] args)

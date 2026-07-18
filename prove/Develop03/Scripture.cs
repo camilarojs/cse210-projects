@@ -50,6 +50,7 @@ class Scripture
         foreach (Word word in _words)
         {
             word.DisplayWord();
+            Console.Write(" "); 
         }
         Console.WriteLine("\n");
     }

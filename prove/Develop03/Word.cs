@@ -1,28 +1,22 @@
-using System.Runtime.CompilerServices;
+using System;
 
-
-// Word class will contain the word. If the word is hidden, GetWordString
-// Will return _characters - one for each character in the word
 class Word
 {
     private string _word;
     private bool _hidden;
 
     public Word(string word)
-
     {
         _word = word;
         _hidden = false;
     }
-
-    // GetWordString - Return either the word, if not hidden or the _s
 
     public string GetWordString()
     {
         string tempWord = "";
         if (_hidden)
         {
-            foreach(char c in _word)
+            foreach (char c in _word)
             {
                 tempWord += '_';
             }
@@ -46,6 +40,6 @@ class Word
 
     public void DisplayWord()
     {
-        Console.WriteLine(GetWordString());
+        Console.Write(GetWordString());
     }
 }
